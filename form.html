@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Form Mahasiswa</title>
+	<style type="text/css">
+	div{
+		text-align: center;
+	}pre{
+		display: inline-block;
+		text-align: left;
+	}form{
+		border: 2px solid black;
+		padding: 2em;
+	}	
+	</style>
+</head>
+<body>
+<div>
+	<center><h1>Biodata Mahasiswa</h1></center>
+	<center><h4>Universitas Ahmad Dahlan</h4></center>
+<pre>
+<form>
+Nama				: <input type="text" name="Nama">
+<br>
+NIM				: <input type="text" name="NIM">
+<br>
+Telphone			: <input type="text" name="Telephone">
+<br>
+Alamat				: <input type="text" name="Alamat">
+<br>
+Jenis Kelamin 			: <input type="radio" name="Kelamin" value="Laki-laki">Laki-laki <input type="radio" name="Kelamin" value="Perempuan">Perempuan
+<br>
+Agama				: <input list="Agama" name="Agama"><datalist id="Agama"><option>Islam</option><option>Kristen Protestan</option><option>Katolik</option><option>Hindu</option><option>Budha</option><opton>Kong Hu Cu</opton></datalist>
+<br>
+Prestasi yang pernah di raih 	: <textarea name="Prestasi"></textarea>
+<br>
+<br>
+<br>
+<center><input type="submit" name="submit" value="Simpan">  <input type="submit" name="cancel" value="Batal"></center>
+</form>
+</pre>
+</div>
+</body>
+</html>
