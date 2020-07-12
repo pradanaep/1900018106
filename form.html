@@ -1,8 +1,9 @@
-
 <!DOCTYPE html>
-<html> 
+<html lang="en">
 <head>
-	<title>Form Mahasiswa</title>
+	<meta charset="UTF-8">
+	<meta name="vlewport" content="width-device-width, initial-scale=1.0">
+	<title>Form Profil Dokter></title>
 	<style type="text/css">
 	div{
 		text-align: center;
@@ -15,31 +16,52 @@
 	}	
 	</style>
 </head>
-<body>
-<div>
-	<center><h1>Biodata Mahasiswa</h1></center>
-	<center><h4>Universitas Ahmad Dahlan</h4></center>
-<pre>
-<form>
-Nama				: <input type="text" name="Nama">
-<br>
-NIM				: <input type="text" name="NIM">
-<br>
-Telphone			: <input type="text" name="Telephone">
-<br>
-Alamat				: <input type="text" name="Alamat">
-<br>
-Jenis Kelamin 			: <input type="radio" name="Kelamin" value="Laki-laki">Laki-laki <input type="radio" name="Kelamin" value="Perempuan">Perempuan
-<br>
-Agama				: <input list="Agama" name="Agama"><datalist id="Agama"><option>Islam</option><option>Kristen Protestan</option><option>Katolik</option><option>Hindu</option><option>Budha</option><opton>Kong Hu Cu</opton></datalist>
-<br>
-Prestasi yang pernah di raih 	: <textarea name="Prestasi"></textarea>
-<br>
-<br>
-<br>
-<center><input type="submit" name="submit" value="Simpan">  <input type="submit" name="cancel" value="Batal"></center>
+<body bgcolor="grey">
+	<form action="hasil.php" method="POST" >
+		<table align="center">
+		<h1 align="center">Form Profil Dokter</h1>
+		<tr>
+			<td>Nama</td>
+			<td><input type="text" name="nama"></td>
+		</tr>
+		<tr>
+			<td>NIK</td>
+			<td><input type="text" name="nik"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" name="email"></td>
+		</tr>
+		<tr>
+			<td>Tanggal Lahir</td>
+			<td><input type="date" name="tgllahir"></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td><input type="radio" name="jk" value="Laki-laki">Laki-laki<input type="radio" name="jk" value="Perempuan">Perempuan
+			</td>
+		</tr>
+		</tr>
+		<tr>
+			<td>Tempat Pendidikan Dokter</td>
+			<td><input type="text" name="tpd"></td>
+		</tr>
+		<tr>
+			<td>Tahun Kelulusan Dokter</td>
+			<td><input type="date" name="tkd"></td>
+		</tr>
+		<tr>
+			<td>Motto Hidup</td>
+			<td><textarea name="motto"></textarea></td>
+		<tr>
+			<td>Foto Profile</td>
+			<td><input type="file" name="foto" accept="image/*"></td>
+		</tr>
+		<tr>
+			<td><button type="submit" name="submit">Kirim</button></td>
+		</tr>
+	</tr>
+</table>
 </form>
-</pre>
-</div>
 </body>
 </html>
